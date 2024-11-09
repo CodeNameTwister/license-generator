@@ -25,6 +25,7 @@ Install with [Cargo](https://crates.io/):
     - MIT
     - MPL
     - Unlicense
+    - Copyright
 
     Options:
       -l, --list lists the available licenses
@@ -49,6 +50,7 @@ This CLI supports the following licenses:
 - [MIT](https://opensource.org/licenses/MIT)
 - [MPL-2.0](https://www.mozilla.org/en-US/MPL/2.0/)
 - [Unlicense](http://unlicense.org/)
+- [Copyright](https://raw.githubusercontent.com/CodeNameTwister/Game-Copyright-License-Template/refs/heads/main/LICENSE-template.txt)
 
 ## Examples
 

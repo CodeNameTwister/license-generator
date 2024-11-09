@@ -18,8 +18,24 @@ pub const LICENSES: [&str; 16] = [
     "LGPL-3",
     "MIT",
     "MPL-2",
-    "Unlicense"
+    "Unlicense",
+	"COPYRIGHT"
 ];
+
+// copyright.txt
+pub struct COPYRIGHT {}
+
+impl License for COPYRIGHT {
+    fn notice(&self, year: u32, name: &str, project: &str) -> String {
+        format!(
+            include_str!("../files/copyright.txt"),
+            YEAR = year,
+            AUTHOR = name,
+            PROJECT = project
+        )
+    }
+}
+
 
 // agpl-3.0.txt
 pub struct AGPL {}

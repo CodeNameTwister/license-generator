@@ -12,6 +12,8 @@ pub fn write_license(license_text: &str, output_path: &str) -> Result<(), io::Er
 
 pub fn create_license(license_type: &str) -> Option<Box<dyn license::License>> {
     match license_type.to_lowercase().as_str() {
+		// COPYRIGHT
+		"copyright" => Some(Box::new(license::COPYRIGHT {})),
         // BSD
         "bsd" => Some(Box::new(license::BSD {})),
         // MIT
